@@ -40,6 +40,39 @@
             text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
         }
 
+        /* スマートフォン向け調整 */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 5rem; /* スマートフォンではフォントサイズを小さく */
+            }
+
+            header .logo {
+                max-width: 150px; /* スマートフォンではロゴも小さく */
+            }
+
+            .hero h2 {
+                font-size: 1.8rem; /* スマートフォンではキャッチフレーズも小さく */
+            }
+
+            .member-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* メンバーカードのサイズ調整 */
+                gap: 1rem;
+            }
+
+            .member-card img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .member-card h3 {
+                font-size: 1rem;
+            }
+
+            .members ul li {
+                font-size: 0.9rem;
+            }
+        }
+
         /* キャッチフレーズセクション */
         .hero {
             text-align: center;
