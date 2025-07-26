@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowPadsLab - クリエイターチーム</title>
     <style>
+        @font-face {
+            font-family: 'Keifont';
+            src: url('素材/k-font/keifont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         /* 基本スタイル */
         body {
             margin: 0;
@@ -40,10 +47,22 @@
             text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
         }
 
+        .furigana {
+            font-family: 'Keifont', sans-serif;
+            font-size: 2rem;
+            color: #d9538d;
+            margin-top: -1rem;
+        }
+
         /* スマートフォン向け調整 */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 3rem; /* スマートフォンではさらにフォントサイズを小さく */
+            }
+
+            .furigana {
+                font-size: 1.2rem;
+                margin-top: -0.5rem;
             }
 
             header .logo {
@@ -80,6 +99,7 @@
         }
 
         .hero h2 {
+            font-family: 'Keifont', sans-serif;
             font-size: 2.66rem; /* フォントサイズを2/3に縮小 */
             color: #d9538d; /* 少し濃いピンク */
             font-weight: bold;
@@ -166,6 +186,7 @@
     <header>
         <img src="素材/PPL rogo.png" alt="PowPadsLab Logo" class="logo">
         <h1>PowPadsLab</h1>
+        <p class="furigana">パウパッズラボ</p>
     </header>
 
     <main>
