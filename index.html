@@ -50,6 +50,25 @@
             font-size: 2rem;
             color: #d9538d; /* 少し濃いピンク */
             font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* 影を追加 */
+            opacity: 0;
+            transform: translateY(50px) scale(0.8); /* 初期位置とサイズを変更 */
+            animation: dynamicFadeIn 1.5s forwards cubic-bezier(0.68, -0.55, 0.265, 1.55); /* よりダイナミックなアニメーション */
+        }
+
+        @keyframes dynamicFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px) scale(0.8);
+            }
+            70% {
+                opacity: 1;
+                transform: translateY(-10px) scale(1.05); /* 少し跳ね上がる */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
 
         /* メンバー紹介セクション */
